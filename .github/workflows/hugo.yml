@@ -24,7 +24,7 @@ jobs:
 
       - name: Install TinaCMS and TinaCMS CLI
         run: |
-          npm install tinacms tinacms/cli
+          npm install tinacms
 
       - name: Build site and run Hugo
         env:
