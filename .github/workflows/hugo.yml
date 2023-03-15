@@ -46,6 +46,10 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v2.4.4
+        with:
+          node-version: '14.x'
       - name: Install Node.js dependencies
         run: "npm i @tinacms/cli && npm i tinacms"
       - name: Build with Hugo
