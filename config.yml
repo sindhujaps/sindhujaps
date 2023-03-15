@@ -1,0 +1,103 @@
+baseURL: "https://sindhujaps.xyz"
+title: sindhujaps
+languageCode: en
+paginate: 5
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+languages:
+  en:
+    languageName: ":en:"
+    weight: 2
+    taxonomies:
+      category: categories
+      tag: tags
+    menu:
+      main:
+        - name: Categories
+          url: categories/
+          weight: 10
+        - name: Search
+          url: search/
+          weight: 20
+        - name: Archive
+          url: archives
+          weight: 20
+        - name: About
+          url: about/
+          weight: 20
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+params:
+  env: production
+  title: "sindhuja"
+  tagline: "Flowing right outta my head!"
+  description: "Unfiltered thoughts and opinions for the insane ones."
+  author: Sindhuja
+  # author: ["Me", "You"] # multiple authors
+
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  comments: true
+  defaultTheme: auto
+  disableThemeToggle: false
+  disableSpecial1stPost: false
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+  # assets:
+  #    favicon: "<link / abs url>"
+  #    favicon16x16: "<link / abs url>"
+  #    favicon32x32: "<link / abs url>"
+  #    apple_touch_icon: "<link / abs url>"
+  #    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "sindhujaps"
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi There \U0001F44B"
+    Content: This blog is mainly a way for me to vent my thoughts. I'm a solid overthinker who loves looking at things from a different perspective. All the articles here are completely random and unfiltered. Have fun!
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/markisdev"
+    - name: linkedin
+      url: "https://linkedin.com/in/rijuthmenon"
+    - name: twitter
+      url: "https://twitter.com/rijuthm"
+    - name: rss
+      url: "/index.xml"
+# menu:
+#   main:
+#     - identifier: categories
+#       name: categories
+#       url: /categories/
+#       weight: 10
+#     - identifier: tags
+#       name: tags
+#       url: /tags/
+#       weight: 20
+#     - identifier: about
+#       url: /about/
+#       weight: 30
