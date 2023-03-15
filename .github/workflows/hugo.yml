@@ -50,6 +50,8 @@ jobs:
         uses: actions/setup-node@v3.6.0
       - name: Install Node.js dependencies
         run: "npm i @tinacms/cli && npm i tinacms"
+      - name: Install npx
+        run: npm install -g npx
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
