@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>sindhujaps</title>
+    <link>https://sindhujaps.xyz/</link>
+    <description>Recent content on sindhujaps</description>
+    <image>
+      <title>sindhujaps</title>
+      <url>https://sindhujaps.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://sindhujaps.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 14 Mar 2023 18:30:00 +0000</lastBuildDate><atom:link href="https://sindhujaps.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello, World!</title>
+      <link>https://sindhujaps.xyz/posts/hello-world/</link>
+      <pubDate>Tue, 14 Mar 2023 18:30:00 +0000</pubDate>
+      
+      <guid>https://sindhujaps.xyz/posts/hello-world/</guid>
+      <description>Hello World! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non lorem diam. Quisque vulputate nibh sodales eros pretium tincidunt. Aenean porttitor efficitur convallis. Nulla sagittis finibus convallis. Phasellus in fermentum quam, eu egestas tortor. Maecenas ac mollis leo. Integer maximus eu nisl vel sagittis.
+Suspendisse facilisis, mi ac scelerisque interdum, ligula ex imperdiet felis, a posuere eros justo nec sem. Nullam laoreet accumsan metus, sit amet tincidunt orci egestas nec.</description>
+    </item>
+    
+    
+    
+    
+  </channel>
+</rss>
