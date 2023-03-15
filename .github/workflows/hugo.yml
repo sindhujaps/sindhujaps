@@ -47,7 +47,12 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       - name: Install Node.js dependencies
-        run: "npm install tinacms"
+        run: "npm install @tinacms/cli tinacms"
+      - name: Build TinaCMS
+        env:
+          CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
+          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+        run: npx tinacms build
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
@@ -57,11 +62,6 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Build TinaCMS
-        env:
-          CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
-          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-        run: npx tinacms build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
