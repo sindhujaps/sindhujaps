@@ -2,9 +2,7 @@ import { defineConfig } from "tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
-const now = new Date();
-const ist = new Date(now.getTime() + 5.5 * 60 * 60 * 1000);
-const today = `${ist.getFullYear()}-${(ist.getMonth() + 1).toString().padStart(2, '0')}-${ist.getDate().toString().padStart(2, '0')}`;
+
 export default defineConfig({
   branch,
   clientId: process.env.CLIENT_ID, // Get this from tina.io
@@ -27,6 +25,9 @@ export default defineConfig({
         path: "content/posts",
         defaultItem: () =>
         {
+          const now = new Date();
+          const ist = new Date(now.getTime() + 5.5 * 60 * 60 * 1000);
+          const today = `${ist.getFullYear()}-${(ist.getMonth() + 1).toString().padStart(2, '0')}-${ist.getDate().toString().padStart(2, '0')}`;
           return {
             date: today,
           }
