@@ -1,14 +1,14 @@
 ---
-title: "About"
-summary: "Get to know me better!"
-url: "/about"
-layout: "page"
+title: About
+summary: Get to know me better!
+url: /about
+layout: page
 hideMeta: true
 searchHidden: true
 disableShare: true
 ---
 
-Hi, I’m Aditya . I’m from Mumbai, India
+Hi, I’m **Aditya **. I’m from Mumbai, India
 
 Currently working as Pentester (A.S.E) @ Tata Consultancy Services (full-time), since July 2021.
 
